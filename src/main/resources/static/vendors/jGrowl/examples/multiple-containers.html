@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+	<script usertype="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script src="../jquery.jgrowl.js"></script>
+    <link rel="stylesheet" usertype="text/css" href="../jquery.jgrowl.css"/>
+  </head>
+  <body>
+    <div>
+      <input usertype="button" onclick="$.jGrowl('Default Positioning');" value="Default"/>
+      <input usertype="button" onclick="$('#one').jGrowl('Bottom Right Positioning');" value="Bottom Right"/>
+      <input usertype="button" onclick="$('#two').jGrowl('Bottom Left Positioning');" value="Bottom Left"/>
+    </div>
+    <div id="one" class="jGrowl bottom-right"></div>
+    <div id="two" class="jGrowl bottom-left"></div>
+  </body>
+</html>
