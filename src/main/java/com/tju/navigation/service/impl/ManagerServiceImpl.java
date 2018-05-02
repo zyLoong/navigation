@@ -17,8 +17,8 @@ public class ManagerServiceImpl implements ManagerService {
     @Autowired
     private ManagerDao managerDao;
 
-    @Override
-    public List<Resource> getResourcesByContributorid(Integer contributorid) {
-        return managerDao.getResourcesByContributorid(contributorid);
-    }
+//    @Override
+//    public List<Resource> getResourcesByContributorid(Integer contributorid) {
+//        return managerDao.getResourcesByContributorid(contributorid);
+//    }
 }

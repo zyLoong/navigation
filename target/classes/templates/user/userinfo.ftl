@@ -13,168 +13,12 @@
 
 <body>
 <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container-fluid">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="#">Admin Panel</a>
-            <div class="nav-collapse collapse">
-                <ul class="nav pull-right">
-                    <li class="dropdown">
-                        <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i
-                                class="icon-user"></i> Vincent Gabriel <i class="caret"></i>
-
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a tabindex="-1" href="#">Profile</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a tabindex="-1" href="login.html">Logout</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav">
-                    <li class="active">
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Settings <b class="caret"></b>
-
-                        </a>
-                        <ul class="dropdown-menu" id="menu1">
-                            <li>
-                                <a href="#">Tools <i class="icon-arrow-right"></i>
-
-                                </a>
-                                <ul class="dropdown-menu sub-menu">
-                                    <li>
-                                        <a href="#">Reports</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Logs</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Errors</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">SEO Settings</a>
-                            </li>
-                            <li>
-                                <a href="#">Other Link</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">Other Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Other Link</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Content <i
-                                class="caret"></i>
-
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a tabindex="-1" href="#">Blog</a>
-                            </li>
-                            <li>
-                                <a tabindex="-1" href="#">News</a>
-                            </li>
-                            <li>
-                                <a tabindex="-1" href="#">Custom Pages</a>
-                            </li>
-                            <li>
-                                <a tabindex="-1" href="#">Calendar</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a tabindex="-1" href="#">FAQ</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Users <i
-                                class="caret"></i>
-
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a tabindex="-1" href="#">User List</a>
-                            </li>
-                            <li>
-                                <a tabindex="-1" href="#">Search</a>
-                            </li>
-                            <li>
-                                <a tabindex="-1" href="#">Permissions</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </div>
+<#include "${APP_PATH}/topContainer.ftl">
 </div>
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span3" id="sidebar">
-            <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
-                <li>
-                    <a href="index.html"><i class="icon-chevron-right"></i> Dashboard</a>
-                </li>
-                <li>
-                    <a href="calendar.html"><i class="icon-chevron-right"></i> Calendar</a>
-                </li>
-                <li>
-                    <a href="stats.html"><i class="icon-chevron-right"></i> Statistics (Charts)</a>
-                </li>
-                <li>
-                    <a href="form.html"><i class="icon-chevron-right"></i> Forms</a>
-                </li>
-                <li class="active">
-                    <a href="tables.html"><i class="icon-chevron-right"></i> Tables</a>
-                </li>
-                <li>
-                    <a href="buttons.html"><i class="icon-chevron-right"></i> Buttons & Icons</a>
-                </li>
-                <li>
-                    <a href="interface.html"><i class="icon-chevron-right"></i> UI & Interface</a>
-                </li>
-                <li>
-                    <a href="#"><span class="badge badge-success pull-right">731</span> Orders</a>
-                </li>
-                <li>
-                    <a href="#"><span class="badge badge-success pull-right">812</span> Invoices</a>
-                </li>
-                <li>
-                    <a href="#"><span class="badge badge-info pull-right">27</span> Clients</a>
-                </li>
-                <li>
-                    <a href="#"><span class="badge badge-info pull-right">1,234</span> Users</a>
-                </li>
-                <li>
-                    <a href="#"><span class="badge badge-info pull-right">2,221</span> Messages</a>
-                </li>
-                <li>
-                    <a href="#"><span class="badge badge-info pull-right">11</span> Reports</a>
-                </li>
-                <li>
-                    <a href="#"><span class="badge badge-important pull-right">83</span> Errors</a>
-                </li>
-                <li>
-                    <a href="#"><span class="badge badge-warning pull-right">4,231</span> Logs</a>
-                </li>
-            </ul>
+        <#include "${APP_PATH}/leftContainer.ftl">
         </div>
 
         <!--/span-->
@@ -183,14 +27,17 @@
                 <!-- block -->
                 <div class="block">
                     <div class="navbar navbar-inner block-header">
-                        <div class="muted pull-left">我贡献的资源</div>
+                        <div class="muted pull-left">我提交过的资源</div>
                     </div>
                     <div class="block-content collapse in">
                         <div class="span12">
                             <div class="table-toolbar">
                                 <div class="btn-group">
                                     <a href="#">
-                                        <button class="btn btn-success">添加<i class="icon-plus icon-white"></i>
+                                        <button id="addResource"
+                                                onclick="window.location.href='${APP_PATH}/user/toAddResource'"
+                                                class="btn btn-success">添加<i
+                                                class="icon-plus icon-white"></i>
                                         </button>
                                     </a>
                                 </div>
@@ -210,7 +57,7 @@
                                 <thead>
                                 <tr>
                                     <th>名称</th>
-                                    <th>链接</th>
+                                <#--<th>链接</th>-->
                                     <th>类型</th>
                                     <th>提交时间</th>
                                     <th>点击量</th>
@@ -226,13 +73,14 @@
                 </div>
                 <!-- /block -->
             </div>
-
         </div>
     </div>
     <hr>
     <footer>
         <p>&copy; Vincent Gabriel 2013 - More Templates <a href="http://www.cssmoban.com/" target="_blank"
                                                            title="cssmoban">cssmoban</a>
+            <a onclick="toUrl('a')">aaa</a>
+
     </footer>
 </div>
 
@@ -250,9 +98,10 @@
 
     });
 
+    //  页面加载后异步加载用户所提交过的所有资源
     $.ajax({
         type: "post",
-        url: '${APP_PATH}/manager/getResourcesByUsername',
+        url: '${APP_PATH}/user/getResourcesByUsername',
         data: {
             contributorid: "${Session.loginUser.id}"
         },
@@ -260,24 +109,38 @@
             if (result.success) {
                 var content = '';
                 $.each(result.data, function (i, e) {
+
+
                     content = content + '<tr class="odd gradeX">'
-                    content = content + '    <td>' + e.name + '</td>'
-                    content = content + '    <td>' + e.url + '</td>'
+//                            <a onclick="toUrl('www.baidu.com')">baidu</a>
+//                    content = content + '    <td> <a href="#" onclick="toUrl(\''+e.url+'\')">' + e.name + '</a></td>'
+                    content = content + '    <td> <a  onclick="clickUrl(\'' + e.id + '\')"                 id="' + e.id + '"  class="resourceUrl"  target="_blank"  href="' + e.url + '" >' + e.name + '</a></td>'
                     content = content + '    <td>' + e.resourcetype + '</td>'
                     content = content + '    <td class="center">' + e.createtime + '</td>'
                     content = content + '    <td class="center">' + e.frequency + '</td>'
-                    content = content + '    <td class="center">资源状态</td>'
+                    content = content + '    <td class="center">' + e.status + '</td>'
 //                    content = content + '    <td class="center">'+e.name+'</td>'
                     content = content + '</tr>'
                 });
                 $("tbody").html(content);
 
             } else {
-                alert(result.message)
-
+//                alert(result.message)
             }
         }
+
     });
+
+    function clickUrl(id) {
+        $.ajax({
+            type: "post",
+            url: "${APP_PATH}/user/clickUrl",
+            data: {
+                id: id
+            }
+        })
+    }
+
 </script>
 </body>
 

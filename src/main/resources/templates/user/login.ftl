@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <title>用户登陆</title>
+    <title>用户登录</title>
     <!-- Bootstrap -->
     <link href="${APP_PATH}/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="${APP_PATH}/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
@@ -13,15 +13,15 @@
 <div class="container">
 
     <form class="form-signin">
-        <h2 class="form-signin-heading">登陆</h2>
-        <input usertype="text" id="username" class="input-block-level" placeholder="用户名">
-        <input usertype="password" id="password" class="input-block-level" placeholder="密码">
+        <h2 class="form-signin-heading">登录</h2>
+        <input type="text" id="username" value="user" class="input-block-level" placeholder="用户名">
+        <input type="password" id="password" value="123" class="input-block-level" placeholder="密码">
         <label class="checkbox">
             <input type="checkbox" value="remember-me"> 记住我
         </label>
-        <button class="btn btn-large btn-primary" usertype="button" onclick="login()">登陆</button>
-        <button class="btn btn-large btn-primary" usertype="button" onclick="forgetPassword">忘记密码</button>
-        <button class="btn btn-large btn-primary" usertype="button" onclick="regist()">去注册</button>
+        <button class="btn btn-large btn-primary" type="button" onclick="login()">登录</button>
+        <button class="btn btn-large btn-primary" type="button" onclick="forgetPassword">忘记密码</button>
+        <button class="btn btn-large btn-primary" type="button" onclick="regist()">去注册</button>
     </form>
 
 </div> <!-- /container -->
@@ -60,7 +60,7 @@
         }
 
         $.ajax({
-            usertype: "post",
+            type: "post",
             url: "${APP_PATH}/user/doLogin",
             data: {
                 "username": username,

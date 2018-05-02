@@ -1,5 +1,6 @@
 package com.tju.navigation.controller;
 
+import com.tju.navigation.bean.Resource;
 import com.tju.navigation.bean.User;
 import com.tju.navigation.service.UserService;
 import com.tju.navigation.util.Const;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 /**
  * 用户控制器，执行注册登录等功能
@@ -57,6 +59,14 @@ public class UserController extends BaseController {
         return "user/userinfo";
     }
 
+
+    /**
+     * 跳转到添加资源页面
+     */
+    @RequestMapping("/user/toAddResource")
+    public String toAddResource() {
+        return "user/addResource";
+    }
 
     /**
      * 接收用户的登陆信息，
@@ -116,6 +126,33 @@ public class UserController extends BaseController {
     }
 
     /**
+     * 将用户提交的资源添加到数据库中，设置状态为审核中（表结构默认为2-审核中，因此无需在这里设置值）
+     *
+     * @param resource
+     * @param session
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping("/user/doAddResources")
+    public Object doAddResources(Resource resource, HttpSession session) {
+        start();
+        try {
+            User user = (User) session.getAttribute(Const.LOGIN_USER);
+            resource.setContributorid(user.getId());
+            userService.addResource(resource);
+
+            success(true);
+        } catch (Exception e) {
+            success(false);
+            message(Const.SYSTEM_ERROR);
+            e.printStackTrace();
+        }
+
+
+        return end();
+    }
+
+    /**
      * 接收用户的注册信息，检索用户名是否已经被占用
      * 如果被占用返回提示信息
      * 如果没有被占用则加密密码后保存用户信息。
@@ -151,5 +188,103 @@ public class UserController extends BaseController {
             e.printStackTrace();
         }
         return end();
+    }
+
+    /**
+     * 用户进入用户信息页面后发出异步请求加载该用户提交过的资源列表
+     * 将资源表中的资源类型和状态代号变成相应的字符串
+     * 如果用户未曾提交过任何资源，则提示:暂未提交任何资源
+     *
+     * @return 返回对应用户提交过的所有资源
+     */
+    @ResponseBody
+    @RequestMapping("/user/getResourcesByUsername")
+    public Object getResourcesByUsername(Integer contributorid) {
+        start();
+        try {
+            List<Resource> resourcesList = userService.getResourcesByContributorid(contributorid);
+            if (resourcesList.size() == 0) {
+                success(false);
+                message("暂未提交任何资源");
+                return end();
+            }
+
+//            将资源表中的资源类型和状态代号变成相应的字符串
+            for (Resource resource : resourcesList) {
+                switch (resource.getResourcetype()) {
+                    case "0": {
+                        resource.setResourcetype("其他");
+                        break;
+                    }
+                    case "1": {
+                        resource.setResourcetype("工作");
+                        break;
+                    }
+                    case "2": {
+                        resource.setResourcetype("工具");
+                        break;
+                    }
+                    case "3": {
+                        resource.setResourcetype("门户");
+                        break;
+                    }
+                    case "4": {
+                        resource.setResourcetype("社区论坛");
+                        break;
+                    }
+                    case "5": {
+                        resource.setResourcetype("学习进阶");
+                        break;
+                    }
+                    case "6": {
+                        resource.setResourcetype("常用");
+                        break;
+                    }
+                    case "7": {
+                        resource.setResourcetype("博客");
+                        break;
+                    }
+                    default:
+                }
+                switch (resource.getStatus()) {
+                    case "2": {
+                        resource.setStatus("审核中");
+                        break;
+                    }
+                    case "1": {
+                        resource.setStatus("审核通过");
+                        break;
+                    }
+                    case "0": {
+                        resource.setStatus("审核未通过");
+                        break;
+                    }
+                    default:
+                }
+            }
+            data(resourcesList);
+            success(true);
+        } catch (Exception e) {
+            success(false);
+            message(Const.SYSTEM_ERROR);
+            e.printStackTrace();
+        }
+        return end();
+    }
+
+
+    /**
+     * 资源链接被点击时发送一个异步请求，请求携带一个链接ID的参数
+     * 将该链接资源被点击次数加一
+     * 用户积分加一
+     *
+     * @param id
+     */
+    @RequestMapping("/user/clickUrl")
+    public void clickUrl(String id, HttpSession session) {
+        userService.resourceFrequencyPlus(id);
+        User user = ((User) session.getAttribute(Const.LOGIN_USER));
+        userService.pointsPlus(user.getId(), 1);
+
     }
 }

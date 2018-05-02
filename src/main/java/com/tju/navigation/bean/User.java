@@ -6,22 +6,19 @@ package com.tju.navigation.bean;
  */
 @SuppressWarnings("unused")
 public class User {
-    private Integer id;
+    private String id;
     private String username;
     private String password;
     private String email;
-    private String createdate;
-    /**
-     * 用户类型，可能有三种： 用户、管理员、超级管理员
-     */
+    private String createtime;
     private String usertype;
     private Integer points;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -49,12 +46,12 @@ public class User {
         this.email = email;
     }
 
-    public String getCreatedate() {
-        return createdate;
+    public String setCreatetime() {
+        return createtime;
     }
 
-    public void setCreatedate(String createdate) {
-        this.createdate = createdate;
+    public void setCreatetime(String createtime) {
+        this.createtime = createtime;
     }
 
     public String getUsertype() {
@@ -80,7 +77,7 @@ public class User {
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
-                ", createdate='" + createdate + '\'' +
+                ", createtime='" + createtime + '\'' +
                 ", usertype='" + usertype + '\'' +
                 ", points=" + points +
                 '}';

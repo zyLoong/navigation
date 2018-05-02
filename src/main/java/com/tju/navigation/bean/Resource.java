@@ -12,9 +12,10 @@ public class Resource {
     private String url;
     private String resourcetype;
     private Integer frequency;
-    private Integer contributorid;
+    private String contributorid;
     private String contributorname;
     private String createtime;
+    private String status;
 
     @Override
     public String toString() {
@@ -24,9 +25,10 @@ public class Resource {
                 ", url='" + url + '\'' +
                 ", resourcetype='" + resourcetype + '\'' +
                 ", frequency=" + frequency +
-                ", contributorid=" + contributorid +
+                ", contributorid='" + contributorid + '\'' +
                 ", contributorname='" + contributorname + '\'' +
                 ", createtime='" + createtime + '\'' +
+                ", status='" + status + '\'' +
                 '}';
     }
 
@@ -70,11 +72,11 @@ public class Resource {
         this.frequency = frequency;
     }
 
-    public Integer getContributorid() {
+    public String getContributorid() {
         return contributorid;
     }
 
-    public void setContributorid(Integer contributorid) {
+    public void setContributorid(String contributorid) {
         this.contributorid = contributorid;
     }
 
@@ -92,5 +94,13 @@ public class Resource {
 
     public void setCreatetime(String createtime) {
         this.createtime = createtime;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

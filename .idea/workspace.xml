@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ed123ed-5d6e-4087-97e8-eb339c240b89" name="Default" comment="" />
+    <list default="true" id="2ed123ed-5d6e-4087-97e8-eb339c240b89" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/leftContainer.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/topContainer.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/addResource.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tju/navigation/bean/Resource.class" afterPath="$PROJECT_DIR$/target/classes/com/tju/navigation/bean/Resource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tju/navigation/controller/ManagerController.class" afterPath="$PROJECT_DIR$/target/classes/com/tju/navigation/controller/ManagerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tju/navigation/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/tju/navigation/controller/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tju/navigation/dao/ManagerDao.class" afterPath="$PROJECT_DIR$/target/classes/com/tju/navigation/dao/ManagerDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tju/navigation/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/classes/com/tju/navigation/dao/UserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tju/navigation/service/ManagerService.class" afterPath="$PROJECT_DIR$/target/classes/com/tju/navigation/service/ManagerService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tju/navigation/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/tju/navigation/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tju/navigation/service/impl/ManagerServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/tju/navigation/service/impl/ManagerServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tju/navigation/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/tju/navigation/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/Resource.java" afterPath="$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/Resource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/ManagerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/ManagerController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/ManagerDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/ManagerDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/ManagerService.java" afterPath="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/ManagerService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/ManagerServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/ManagerServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/ManagerDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/ManagerDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/UserDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/UserDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/index.ftl" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/index.ftl" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/index.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/test.ftl" afterPath="$PROJECT_DIR$/src/main/resources/templates/test.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login.ftl" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/user/regist.ftl" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/regist.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/user/userinfo.ftl" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/userinfo.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/ManagerDao.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/ManagerDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/UserDao.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/UserDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/manager/index.ftl" afterPath="$PROJECT_DIR$/target/classes/templates/manager/index.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/user/login.ftl" afterPath="$PROJECT_DIR$/target/classes/templates/user/login.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/user/userinfo.ftl" afterPath="$PROJECT_DIR$/target/classes/templates/user/userinfo.ftl" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,6 +53,11 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/navigation$NavigationApplication.coverage" NAME="NavigationApplication Coverage Results" MODIFIED="1525237812480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.tju.navigation.*</FILTER>
+    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -58,75 +100,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ManagerController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.ftl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/manager/index.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManagerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/ManagerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/service/ManagerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="20" column="54" lean-forward="false" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagerServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/ManagerServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagerDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/ManagerDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagerDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/ManagerDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <marker date="1524834976819" expanded="true" signature="302:510" ph="SELECT resou... resource" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userinfo.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/userinfo.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="251" column="0" lean-forward="false" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Resource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/Resource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="64">
+              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -147,36 +135,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>login</find>
-      <find>href=&quot;</find>
-      <find>src=&quot;</find>
-      <find>session</find>
-      <find>登录</find>
-      <find>退出</find>
-      <find>.flexslider</find>
-      <find>面试</find>
-      <find>jquery.f</find>
-      <find>1</find>
-      <find>1.jpg</find>
-      <find>backstretch</find>
-      <find>Bootstrap Login For</find>
-      <find>made with Bootstrap. Downloa</find>
-      <find>responsive</find>
-      <find>登</find>
-      <find>glyp</find>
-      <find>regist</find>
-      <find>toregist</find>
-      <find>href</find>
-      <find>src</find>
-      <find>basic table</find>
-      <find>dataTables</find>
-      <find>setting</find>
-      <find>devtoo</find>
-      <find>userinfo</find>
-      <find>${</find>
-      <find>loginUser</find>
-      <find>onclick=&quot;userInfo()</find>
       <find>记住我</find>
+      <find>page</find>
+      <find>record</find>
+      <find>available in table</find>
+      <find>Show</find>
+      <find>alert</find>
+      <find>贡献</find>
+      <find>addresour</find>
+      <find>top</find>
+      <find>t</find>
+      <find>添加</find>
+      <find>span9</find>
+      <find>add</find>
+      <find>userinfo</find>
+      <find>c</find>
+      <find>manag</find>
+      <find>登陆</find>
+      <find>usertype</find>
+      <find>doAddResources</find>
+      <find>info</find>
+      <find>getResourcesByUsername</find>
+      <find>字符串</find>
+      <find>case &quot;</find>
+      <find>create</find>
+      <find>timeout</find>
+      <find>onclick</find>
+      <find>提交</find>
+      <find>resourceUrl</find>
+      <find>createdate</find>
+      <find>createt</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;${APP_PATH}/static/</replace>
@@ -186,7 +174,14 @@
       <replace>href=&quot;index/</replace>
       <replace>src=&quot;index/</replace>
       <replace>src=&quot;${APP_PATH}/</replace>
+      <replace>登录</replace>
+      <replace>type</replace>
+      <replace>createtime</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -200,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/listener/StartUpSystemListener.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/NavigationApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/index.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/BaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/DispatcherController.java" />
@@ -210,34 +204,39 @@
         <option value="$PROJECT_DIR$/src/test/java/com/tju/navigation/NavigationApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/util/Const.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/user/test.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/test.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/static/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.svg" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/user/a.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/user/regist.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/user/userManager.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/user/manager.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/config/WebMvcResourcesConfigurer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/config/MyAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/manager/index.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/UserDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/user/login.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/Resources.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/Resource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/ManagerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/ManagerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/ManagerDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/base.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/leftContainer.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/topContainer.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/ManagerDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/ManagerDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/ManagerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/ManagerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/ManagerController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/user/regist.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/test.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/Resource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/user/login.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/user/addResource.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/user/userinfo.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/UserDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/manager/index.ftl" />
       </list>
     </option>
   </component>
@@ -278,9 +277,8 @@
     <option name="jreName" value="1.8" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="291" />
-    <option name="y" value="40" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -371,33 +369,7 @@
               <item name="navigation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="navigation" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="navigation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="navigation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="navigation" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="navigation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="navigation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="navigation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="navigation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="navigation" type="b2602c69:ProjectViewProjectNode" />
@@ -406,6 +378,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="navigation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="navigation" type="b2602c69:ProjectViewProjectNode" />
@@ -420,23 +401,23 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="nodejs_interpreter_path" value="F:/nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot/atcrowdfunding" />
+    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="resource&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/bean/Resource.java&#10;userdao&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/resources/mybatis/UserDao.xml&#10;managercon&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/ManagerController.java&#10;managercontro&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/ManagerController.java&#10;usercontroll&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/UserController.java&#10;user.xml&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/resources/mybatis/UserDao.xml&#10;user.java&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/bean/User.java&#10;user&#9;PSI&#9;JAVA://com.tju.navigation.bean.User&#10;pom&#9;FILE&#9;file://F:/JavaProject/navigation/pom.xml&#10;con&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/ManagerController.java&#10;controller&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/UserController.java&#10;const&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/util/Const.java&#10;index&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/resources/templates/index.ftl&#10;contro&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/UserController.java&#10;userdao.x&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/resources/mybatis/UserDao.xml&#10;WebMvcAutoConfiguration&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration" />
+    <property name="SearchEverywhereHistoryKey" value="manager&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/ManagerController.java&#10;userdao.xm&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/resources/mybatis/UserDao.xml&#10;usercontr&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/UserController.java&#10;login.ftl&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/resources/templates/user/login.ftl&#10;userdao&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/resources/mybatis/UserDao.xml&#10;usercontro&#9;PSI&#9;JAVA://com.tju.navigation.controller.UserController&#10;Resource&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/bean/Resource.java&#10;managercont&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/ManagerController.java&#10;usercontroller&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/UserController.java&#10;managerservice&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/service/ManagerService.java&#10;managerda&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/resources/mybatis/ManagerDao.xml&#10;userd&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/resources/mybatis/UserDao.xml&#10;managerservi&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/service/impl/ManagerServiceImpl.java&#10;usercont&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/UserController.java&#10;manag&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/ManagerController.java&#10;usercon&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/UserController.java&#10;resource&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/bean/Resource.java&#10;resour&#9;FILE&#9;das://table:/655d50c1/535b9c67-94c6-4491-97d2-afb466ce7206/navigation.resource&#10;managercon&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/ManagerController.java&#10;managercontro&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/ManagerController.java&#10;usercontroll&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/UserController.java&#10;user.xml&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/resources/mybatis/UserDao.xml&#10;user.java&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/bean/User.java&#10;user&#9;PSI&#9;JAVA://com.tju.navigation.bean.User&#10;pom&#9;FILE&#9;file://F:/JavaProject/navigation/pom.xml&#10;con&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/ManagerController.java&#10;controller&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/UserController.java&#10;const&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/util/Const.java&#10;index&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/resources/templates/index.ftl&#10;contro&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/java/com/tju/navigation/controller/UserController.java&#10;userdao.x&#9;FILE&#9;file://F:/JavaProject/navigation/src/main/resources/mybatis/UserDao.xml&#10;WebMvcAutoConfiguration&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelWidth1" value="75" />
@@ -447,8 +428,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.tju.navigation.bean" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\JavaProject\navigation\src\main\resources\templates" />
+      <recent name="F:\JavaProject\navigation\src\main\resources\templates\user" />
+      <recent name="F:\JavaProject\navigation\src\main\resources\static\index\img\index" />
+      <recent name="F:\JavaProject\navigation\src\main\resources\static\index\img" />
+      <recent name="F:\JavaProject\navigation\src\main\resources\static\index\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\JavaProject\navigation\src\main\resources\templates\user" />
@@ -463,12 +448,8 @@
       <recent name="com.tju.navigation.exception" />
       <recent name="com.tju.navigation.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\JavaProject\navigation\src\main\resources\templates" />
-      <recent name="F:\JavaProject\navigation\src\main\resources\templates\user" />
-      <recent name="F:\JavaProject\navigation\src\main\resources\static\index\img\index" />
-      <recent name="F:\JavaProject\navigation\src\main\resources\static\index\img" />
-      <recent name="F:\JavaProject\navigation\src\main\resources\static\index\css" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tju.navigation.bean" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -753,6 +734,9 @@
       <workItem from="1524660008125" duration="1402000" />
       <workItem from="1524824286232" duration="10784000" />
       <workItem from="1524875577722" duration="1271000" />
+      <workItem from="1524912729926" duration="6187000" />
+      <workItem from="1525159533778" duration="1345000" />
+      <workItem from="1525236094657" duration="9600000" />
     </task>
     <servers />
   </component>
@@ -777,43 +761,44 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38076000" />
+    <option name="totallyTimeSpent" value="55208000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3219178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29109588" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2915952" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25642964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19818456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18078668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24528302" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -859,7 +844,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -868,42 +853,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/util/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/bootstrap/js/dropdown.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/DispatcherController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -912,33 +861,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/p2.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/img/backgrounds/1.jpg" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/img/backgrounds/1@2x.jpg" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/js/jquery-1.11.1.js" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/js/jquery.backstretch.js" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/js/placeholder.js" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/js/scripts.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/carousel.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -973,13 +901,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/a.ftl" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/regist.ftl.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/regist.ftl.bak.ftl" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/userManager.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/manager.ftl" />
@@ -987,28 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="66" column="19" lean-forward="true" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/regist.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="70" column="33" lean-forward="true" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1017,13 +916,269 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="das://table:/655d50c1/535b9c67-94c6-4491-97d2-afb466ce7206/navigation.resource_type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/ManagerDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <marker date="1525238165848" expanded="true" signature="313:535" ph="SELECT resou... resource" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/ManagerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/service/ManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/ManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/regist.ftl.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="70" column="20" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/leftContainer.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="75" lean-forward="true" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/topContainer.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/regist.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+            <element signature="e#1152#1153#0" expanded="true" />
+            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="e#1318#1319#0" expanded="true" />
+            <element signature="e#1348#1349#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1422#1423#0" expanded="true" />
+            <element signature="e#1478#1479#0" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1563#1564#0" expanded="true" />
+            <element signature="e#1595#1596#0" expanded="true" />
+            <element signature="e#1646#1647#0" expanded="true" />
+            <element signature="e#1688#1689#0" expanded="true" />
+            <element signature="e#1728#1729#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1822#1823#0" expanded="true" />
+            <element signature="e#1872#1873#0" expanded="true" />
+            <element signature="e#1914#1915#0" expanded="true" />
+            <element signature="e#1952#1953#0" expanded="true" />
+            <element signature="e#2014#2015#0" expanded="true" />
+            <element signature="e#2068#2069#0" expanded="true" />
+            <element signature="e#2105#2106#0" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2190#2191#0" expanded="true" />
+            <element signature="e#2234#2235#0" expanded="true" />
+            <element signature="e#2267#2268#0" expanded="true" />
+            <element signature="e#2296#2297#0" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2376#2377#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="78" column="44" lean-forward="true" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/655d50c1/535b9c67-94c6-4491-97d2-afb466ce7206/navigation.dictionary">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/login.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/addResource.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="114" column="59" lean-forward="false" selection-start-line="114" selection-start-column="59" selection-end-line="114" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.16.RELEASE/spring-web-4.3.16.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="74" column="1" lean-forward="true" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="54" column="23" lean-forward="true" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+          <folding>
+            <marker date="1525248453791" expanded="true" signature="285:348" ph="SELECT * FRO... user" />
+            <marker date="1525248453791" expanded="true" signature="444:532" ph="INSERT INTO user... " />
+            <marker date="1525248453791" expanded="true" signature="625:715" ph="SELECT * FRO... user" />
+            <marker date="1525248453791" expanded="true" signature="811:1008" ph="SELECT id, u... user" />
+            <marker date="1525248453791" expanded="true" signature="1063:1192" ph="INSERT INTO resource... " />
+            <marker date="1525248453791" expanded="true" signature="1308:1649" ph="SELECT resou... resource" />
+            <marker date="1525248453791" expanded="true" signature="1713:1791" ph="UPDATE resou... " />
+            <marker date="1525248453791" expanded="true" signature="1844:1915" ph="UPDATE user " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1453#1454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/userinfo.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="287" column="0" lean-forward="true" selection-start-line="287" selection-start-column="0" selection-end-line="287" selection-end-column="0" />
+          <folding>
+            <element signature="method#getResourcesByUsername#0;class#UserController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/655d50c1/535b9c67-94c6-4491-97d2-afb466ce7206/navigation.user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1037,128 +1192,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/ManagerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/655d50c1/535b9c67-94c6-4491-97d2-afb466ce7206/navigation.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
-          <folding>
-            <element signature="e#1263#1264#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="43" column="77" lean-forward="false" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/login.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="64">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/manager/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="204" column="54" lean-forward="true" selection-start-line="204" selection-start-column="54" selection-end-line="204" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding>
-            <marker date="1524831687586" expanded="true" signature="285:348" ph="SELECT * FRO... user" />
-            <marker date="1524831687586" expanded="true" signature="444:532" ph="INSERT INTO user... " />
-            <marker date="1524831687586" expanded="true" signature="625:715" ph="SELECT * FRO... user" />
-            <marker date="1524831687586" expanded="true" signature="811:1008" ph="SELECT id, u... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/service/ManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="54" lean-forward="false" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/service/impl/ManagerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/dao/ManagerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/ManagerDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <marker date="1524834976819" expanded="true" signature="302:510" ph="SELECT resou... resource" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/userinfo.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="251" column="0" lean-forward="false" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/bean/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tju/navigation/controller/ManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+        <state relative-caret-position="512">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
       </provider>

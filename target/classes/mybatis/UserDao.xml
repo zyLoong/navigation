@@ -24,11 +24,43 @@
             username,
             password,
             email,
-            createdate,
+            createtime,
             usertype,
             points
         FROM user
         WHERE usertype = '2';
     </select>
+
+    <insert id="addResource">
+        INSERT INTO resource (name, url, resourcetype, contributorid)
+        VALUES (#{name}, #{url}, #{resourcetype}, #{contributorid})
+    </insert>
+
+    <select id="getResourcesByContributorid" resultType="com.tju.navigation.bean.Resource">
+        SELECT
+            resource.id,
+            name,
+            url,
+            resourcetype,
+            frequency,
+            contributorid,
+            resource.createtime,
+            username AS contributorname,
+            status
+        FROM resource, user
+        WHERE contributorid = #{contributorid} AND user.id = #{contributorid}
+    </select>
+
+    <update id="resourceFrequencyPlus">
+        UPDATE resource
+        SET frequency = frequency + 1
+        WHERE id = #{id}
+    </update>
+
+    <update id="pointsPlus">
+        UPDATE user
+        SET points = points + #{i}
+        WHERE id = #{id}
+    </update>
 
 </mapper>

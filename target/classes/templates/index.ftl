@@ -7,9 +7,9 @@
 
     <link rel="stylesheet" href="${APP_PATH}/index/css/index.css">
     <link rel="stylesheet" href="${APP_PATH}/index/css/animate.css">
-    <script usertype="text/javascript" src="${APP_PATH}/index/js/jquery-1.8.2.min.js"></script>
-    <script usertype="text/javascript" src="${APP_PATH}/index/js/jquery.flexslider-min.js"></script>
-    <link href="${APP_PATH}/index/css/animation.css" rel="stylesheet" media="screen" usertype="text/css">
+    <script type="text/javascript" src="${APP_PATH}/index/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="${APP_PATH}/index/js/jquery.flexslider-min.js"></script>
+    <link href="${APP_PATH}/index/css/animation.css" rel="stylesheet" media="screen" type="text/css">
 
     <title>无标题文档</title>
 </head>
@@ -65,7 +65,7 @@
     </div>
 
 
-    <script usertype="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function () {
             $('.flexslider').flexslider({
                 directionNav: true,
@@ -100,7 +100,7 @@
             </div>
         </div>
     </div>
-    <script usertype="text/javascript">
+    <script type="text/javascript">
         var head = $(".top").height();
         $(window).scroll(function () {
             var topScr = $(window).scrollTop();
@@ -385,8 +385,8 @@
             </div>
         </div>
 
-        <script usertype="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao.js"></script>
-        <script usertype="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao2.js"></script>
+        <script type="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao.js"></script>
+        <script type="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao2.js"></script>
 
         <a class="more2" id="main3" href="#">MORE+</a>
 
@@ -609,8 +609,8 @@
             </div>
         </div>
 
-        <script usertype="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao.js"></script>
-        <script usertype="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao2.js"></script>
+        <script type="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao.js"></script>
+        <script type="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao2.js"></script>
 
         <a class="more2" id="main5" href="#">MORE+</a>
 
@@ -832,8 +832,8 @@
             </div>
         </div>
 
-        <script usertype="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao.js"></script>
-        <script usertype="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao2.js"></script>
+        <script type="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao.js"></script>
+        <script type="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao2.js"></script>
 
         <a class="more2" id="main7" href="#">MORE+</a>
 
@@ -1056,8 +1056,8 @@
             </div>
         </div>
 
-        <script usertype="text/javascript" src="${APP_PATH}index/js/yidingzhezhao.js"></script>
-        <script usertype="text/javascript" src="${APP_PATH}index/js/yidingzhezhao2.js"></script>
+        <script type="text/javascript" src="${APP_PATH}index/js/yidingzhezhao.js"></script>
+        <script type="text/javascript" src="${APP_PATH}index/js/yidingzhezhao2.js"></script>
         <script src="${APP_PATH}/layer/layer.js"></script>
         <a class="more2" href="#">MORE+</a>
 

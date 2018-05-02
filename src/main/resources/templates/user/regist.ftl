@@ -14,12 +14,12 @@
 
     <form class="form-signin">
         <h2 class="form-signin-heading">注册</h2>
-        <input usertype="text" id="username" class="input-block-level" placeholder="用户名">
-        <input usertype="password" id="password" class="input-block-level" placeholder="密码">
-        <input usertype="password" id="confirmPassword" class="input-block-level" placeholder="确认密码">
-        <input usertype="email" id="email" class="input-block-level" placeholder="邮箱">
+        <input type="text" id="username" class="input-block-level" placeholder="用户名">
+        <input type="password" id="password" class="input-block-level" placeholder="密码">
+        <input type="password" id="confirmPassword" class="input-block-level" placeholder="确认密码">
+        <input type="email" id="email" class="input-block-level" placeholder="邮箱">
 
-        <button class="btn btn-large btn-primary" usertype="button" onclick="regist()">注册</button>
+        <button class="btn btn-large btn-primary" type="button" onclick="regist()">注册</button>
     </form>
 
 </div> <!-- /container -->
@@ -36,7 +36,7 @@
         var email = $("#email").val();
 
         $.ajax({
-            usertype: "post",
+            type: "post",
             url: "${APP_PATH}/user/doRegist",
             data: {
                 "username": username,
