@@ -43,12 +43,14 @@ public interface UserService {
 
     /**
      * 向资源表中添加数据
+     *
      * @param resource
      */
     void addResource(Resource resource);
 
     /**
      * 根据贡献者id（即用户id）查询该用户提交过的所有资源
+     *
      * @param contributorid 贡献者id
      * @return 该用户提交过的所有资源
      */
@@ -56,14 +58,31 @@ public interface UserService {
 
     /**
      * 根据资源ID将资源被点击次数加一
+     *
      * @param id
      */
     void resourceFrequencyPlus(String id);
 
     /**
      * 给指定用户增加用户积分
+     *
      * @param id 用户id
-     * @param i 用户积分增加数值
+     * @param i  用户积分增加数值
      */
     void pointsPlus(String id, int i);
+
+    /**
+     * 获取用户收藏的资源列表
+     *
+     * @param user
+     * @return
+     */
+    List<Resource> getUserCollectionResources(User user);
+
+    /**
+     * 根据资源id获取资源贡献者用户
+     * @return
+     * @param id
+     */
+    String getUserIdByResourceId(String id);
 }

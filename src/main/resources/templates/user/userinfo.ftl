@@ -76,12 +76,12 @@
         </div>
     </div>
     <hr>
-    <footer>
-        <p>&copy; Vincent Gabriel 2013 - More Templates <a href="http://www.cssmoban.com/" target="_blank"
-                                                           title="cssmoban">cssmoban</a>
-            <a onclick="toUrl('a')">aaa</a>
+    <#--<footer>-->
+        <#--<p>&copy; Vincent Gabriel 2013 - More Templates <a href="http://www.cssmoban.com/" target="_blank"-->
+                                                           <#--title="cssmoban">cssmoban</a>-->
+            <#--<a onclick="toUrl('a')">aaa</a>-->
 
-    </footer>
+    <#--</footer>-->
 </div>
 
 <!--/.fluid-container-->

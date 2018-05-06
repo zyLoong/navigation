@@ -1,11 +1,15 @@
 package com.tju.navigation.bean;
 
+import java.io.Serializable;
+
 /**
  * @author Administrator
  * @date 2018/04/17
  */
 @SuppressWarnings("unused")
-public class User {
+public class User implements Serializable {
+    private static final long serialVersionUID = 7003364717118011773L;
+
     private String id;
     private String username;
     private String password;

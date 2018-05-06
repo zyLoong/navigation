@@ -59,4 +59,18 @@ public class UserServiceImpl implements UserService {
         userDao.pointsPlus(id, i);
     }
 
+    @Override
+    public List<Resource> getUserCollectionResources(User user) {
+        String userId = user.getId();
+        //        从收藏表中获取收藏的资源id
+        List<Integer> list = userDao.getUserCollectionResourceids(userId);
+//        根据资源id获取资源列表
+        List<Resource> resourceList = userDao.getResourcesByResourceIds(list);
+        return resourceList;
+    }
+
+    @Override
+    public String getUserIdByResourceId(String id) {
+        return userDao.getUserIdByResourceId(id);
+    }
 }

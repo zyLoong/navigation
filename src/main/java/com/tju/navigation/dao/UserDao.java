@@ -72,4 +72,25 @@ public interface UserDao {
      * @param i  用户积分增加数值
      */
     void pointsPlus(@Param("id") String id,@Param("i") int i);
+
+    /**
+     * 根据用户ID从collection表中查询用户收藏资源列表
+     * @param userId
+     * @return
+     */
+    List<Integer> getUserCollectionResourceids(String userId);
+
+    /**
+     * 根据资源id列表获取资源列表
+     * @param list
+     * @return
+     */
+    List<Resource> getResourcesByResourceIds(List<Integer> list);
+
+    /**
+     * 根据资源id获取资源贡献者用户
+     * @return
+     * @param id
+     */
+    String getUserIdByResourceId(String id);
 }

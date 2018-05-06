@@ -57,34 +57,6 @@
                                     </td>
                                 </tr>
                                 </#list>
-
-                                <#--<tr class="odd gradeX">-->
-                                <#--<td>Trident</td>-->
-                                <#--<td>Internet-->
-                                <#--Explorer 4.0-->
-                                <#--</td>-->
-                                <#--<td>Win 95+</td>-->
-                                <#--<td class="center"> 4</td>-->
-                                <#--<td class="center">X</td>-->
-                                <#--</tr>-->
-                                <#--<tr class="even gradeC">-->
-                                <#--<td>Trident</td>-->
-                                <#--<td>Internet-->
-                                <#--Explorer 5.0-->
-                                <#--</td>-->
-                                <#--<td>Win 95+</td>-->
-                                <#--<td class="center">5</td>-->
-                                <#--<td class="center">C</td>-->
-                                <#--</tr>-->
-                                <#--<tr class="odd gradeA">-->
-                                <#--<td>Trident</td>-->
-                                <#--<td>Internet-->
-                                <#--Explorer 5.5-->
-                                <#--</td>-->
-                                <#--<td>Win 95+</td>-->
-                                <#--<td class="center">5.5</td>-->
-                                <#--<td class="center">A</td>-->
-                                <#--</tr>-->
                                 </tbody>
 
                             </table>

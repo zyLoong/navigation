@@ -63,4 +63,31 @@
         WHERE id = #{id}
     </update>
 
+    <select id="getUserCollectionResourceids" resultType="java.lang.Integer">
+        SELECT resourceid
+        FROM collection
+        WHERE userid = #{userId}
+    </select>
+
+    <select id="getResourcesByResourceIds" resultType="com.tju.navigation.bean.Resource">
+        SELECT
+        id,
+        name,
+        url,
+        resourcetype,
+        frequency,
+        contributorid,
+        createtime,
+        status
+        FROM resource
+        WHERE id IN
+        <foreach collection="list" item="resourceId" open="(" close=")" separator=",">
+            #{resourceId}
+        </foreach>
+    </select>
+
+    <select id="getUserIdByResourceId" resultType="java.lang.String">
+        SELECT contributorid FROM resource WHERE id=#{id}
+    </select>
+
 </mapper>

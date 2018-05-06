@@ -2,7 +2,7 @@ spring:
   datasource:
     name: mysql
     usertype: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://127.0.0.1:3306/navigation
+    url: jdbc:mysql://127.0.0.1:3306/navigation?allowMultiQueries=true
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver

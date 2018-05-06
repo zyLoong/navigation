@@ -1,12 +1,15 @@
 package com.tju.navigation.bean;
 
+import java.io.Serializable;
+
 /**
  * 资源类，比数据库中多了一个contributorname属性，便于需要贡献者用户名时进行封装
  *
  * @author Administrator
  * @date 2018/04/27
  */
-public class Resource {
+public class Resource implements Serializable {
+    private static final long serialVersionUID = -1526144508008324456L;
     private Integer id;
     private String name;
     private String url;

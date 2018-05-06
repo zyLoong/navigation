@@ -5,6 +5,7 @@ import com.tju.navigation.bean.User;
 import com.tju.navigation.service.UserService;
 import com.tju.navigation.util.Const;
 import com.tju.navigation.util.MD5Util;
+import com.tju.navigation.util.ResourceUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 用户控制器，执行注册登录等功能
@@ -69,6 +71,23 @@ public class UserController extends BaseController {
     }
 
     /**
+     * 跳转到用户收藏页面
+     *
+     * @return
+     */
+    @RequestMapping("/user/toCollection")
+    public String toCollection(HttpSession session, Map<String, Object> map) {
+        User user = (User) session.getAttribute(Const.LOGIN_USER);
+        if (user == null) {
+            return "index";
+        }
+        List<Resource> collectionResources = userService.getUserCollectionResources(user);
+        collectionResources = ResourceUtil.resourceTypeNumToStr(collectionResources);
+        map.put("collectionResources", collectionResources);
+        return "/user/collection";
+    }
+
+    /**
      * 接收用户的登陆信息，
      * 先根据用户名和密码在数据库中进行查询，如果查询不到用户则查询用户名是否存在
      * 如果用户名存在，返回提示信息:用户名或密码错误
@@ -77,6 +96,7 @@ public class UserController extends BaseController {
     @ResponseBody
     @RequestMapping("/user/doLogin")
     public Object doLogin(User loginUser, HttpSession session) {
+
         start();
         try {
 //            先根据用户名和密码在数据库中进行查询
@@ -209,59 +229,9 @@ public class UserController extends BaseController {
                 return end();
             }
 
-//            将资源表中的资源类型和状态代号变成相应的字符串
-            for (Resource resource : resourcesList) {
-                switch (resource.getResourcetype()) {
-                    case "0": {
-                        resource.setResourcetype("其他");
-                        break;
-                    }
-                    case "1": {
-                        resource.setResourcetype("工作");
-                        break;
-                    }
-                    case "2": {
-                        resource.setResourcetype("工具");
-                        break;
-                    }
-                    case "3": {
-                        resource.setResourcetype("门户");
-                        break;
-                    }
-                    case "4": {
-                        resource.setResourcetype("社区论坛");
-                        break;
-                    }
-                    case "5": {
-                        resource.setResourcetype("学习进阶");
-                        break;
-                    }
-                    case "6": {
-                        resource.setResourcetype("常用");
-                        break;
-                    }
-                    case "7": {
-                        resource.setResourcetype("博客");
-                        break;
-                    }
-                    default:
-                }
-                switch (resource.getStatus()) {
-                    case "2": {
-                        resource.setStatus("审核中");
-                        break;
-                    }
-                    case "1": {
-                        resource.setStatus("审核通过");
-                        break;
-                    }
-                    case "0": {
-                        resource.setStatus("审核未通过");
-                        break;
-                    }
-                    default:
-                }
-            }
+            resourcesList = ResourceUtil.resourceStatusNumToStr(resourcesList);
+            resourcesList = ResourceUtil.resourceTypeNumToStr(resourcesList);
+
             data(resourcesList);
             success(true);
         } catch (Exception e) {
@@ -276,15 +246,18 @@ public class UserController extends BaseController {
     /**
      * 资源链接被点击时发送一个异步请求，请求携带一个链接ID的参数
      * 将该链接资源被点击次数加一
-     * 用户积分加一
+     * 资源贡献者用户积分加一
      *
      * @param id
      */
     @RequestMapping("/user/clickUrl")
     public void clickUrl(String id, HttpSession session) {
         userService.resourceFrequencyPlus(id);
-        User user = ((User) session.getAttribute(Const.LOGIN_USER));
-        userService.pointsPlus(user.getId(), 1);
+
+//        根据资源id查询资源贡献者id
+        String userId = userService.getUserIdByResourceId(id);
+
+        userService.pointsPlus(userId, 1);
 
     }
 }
