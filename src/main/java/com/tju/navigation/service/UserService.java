@@ -35,6 +35,14 @@ public interface UserService {
     User getUser(User loginUser);
 
     /**
+     * 根据用户ID获取用户对象
+     *
+     * @param userid
+     * @return
+     */
+    User getUserById(String userid);
+
+    /**
      * 查询所有用户信息
      *
      * @return
@@ -81,8 +89,24 @@ public interface UserService {
 
     /**
      * 根据资源id获取资源贡献者用户
-     * @return
+     *
      * @param id
+     * @return
      */
     String getUserIdByResourceId(String id);
+
+    /**
+     * 用户收藏资源
+     *
+     * @param id
+     * @param resourceid
+     */
+    void collectionResource(String id, Integer resourceid);
+
+    /**
+     * 取消收藏
+     * @param userid
+     * @param resourceid
+     */
+    void cancelCollection(String userid, Integer resourceid);
 }

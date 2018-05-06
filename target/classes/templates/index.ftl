@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    <#--<script src="${APP_PATH}/jquery/jquery-2.1.1.min.js"></script>-->
+<#--<script src="${APP_PATH}/jquery/jquery-2.1.1.min.js"></script>-->
 
     <link rel="stylesheet" href="${APP_PATH}/index/css/index.css">
     <link rel="stylesheet" href="${APP_PATH}/index/css/animate.css">
@@ -24,14 +24,16 @@
 
             <div class="nav">
                 <ul>
-                    <li class="nav_li1"><a href="#">Android</a></li>
-                    <li><a href="#">IOS</a></li>
-                    <li><a href="#">前端</a></li>
-                    <li><a href="#">后端</a></li>
-                    <li><a href="#">设计</a></li>
-                    <li><a href="#">面试</a></li>
-                    <li><a href="#">我的书签</a></li>
-                    <li class="nav_b"><a href="#">微信文章</a></li>
+                    <li class="nav_li1"><a href="main1">常用</a></li>
+                    <li><a href="#main2">工具</a></li>
+                    <li><a href="#main3">博客</a></li>
+                    <li><a href="#main4">进阶</a></li>
+                    <li><a href="#main5">开源</a></li>
+                    <li><a href="#main6">社区</a></li>
+                    <li><a href="#main7">工作</a></li>
+                    <li><a href="#main8">其他</a></li>
+                    <li><a href="${APP_PATH}/user/toCollection">收藏</a></li>
+                <#--<li class="nav_b"><a href="#">微信文章</a></li>-->
                 </ul>
             </div>
 
@@ -42,7 +44,7 @@
                 <ul>
                 <#if "${Session.loginUser}" >
                     <li><a onclick="userInfo()">${Session.loginUser.username}</a></li>
-                    <#--<li><a onclick="logout()">退出</a></li>-->
+                <#--<li><a onclick="logout()">退出</a></li>-->
                 <#else >
                     <li><a onclick="login()">登录</a></li>
                     <li><a onclick="regist()">注册</a></li>
@@ -83,19 +85,24 @@
     <div class="nav2">
         <div class="con">
             <ul class="nav22">
-                <li class="nav2_li1"><a href="#main1">常用网站</a></li>
-                <li><a href="#main2">工具大全</a></li>
-                <li><a href="#main3">经典博客</a></li>
-                <li><a href="#main4">进阶之路</a></li>
-                <li><a href="#main5">源码下载</a></li>
-                <li><a href="#main6">开放平台</a></li>
-                <li><a href="#main7">跳槽指南</a></li>
+                <li class="nav2_li1"><a href="#main1">常用</a></li>
+                <li><a href="#main2">工具</a></li>
+                <li><a href="#main3">博客</a></li>
+                <li><a href="#main4">进阶</a></li>
+                <li><a href="#main5">开源</a></li>
+                <li><a href="#main6">社区</a></li>
+                <li><a href="#main7">工作</a></li>
                 <li class="nav_b"><a href="#main8">其他</a></li>
             </ul>
             <div class="denglu2">
                 <ul>
+                <#if "${Session.loginUser}" >
+                    <li><a onclick="userInfo()">${Session.loginUser.username}</a></li>
+                <#--<li><a onclick="logout()">退出</a></li>-->
+                <#else >
                     <li><a onclick="login()">登录</a></li>
                     <li><a onclick="regist()">注册</a></li>
+                </#if>
                 </ul>
             </div>
         </div>
@@ -147,14 +154,14 @@
 
         <a href="#">
             <div class="tit">
-                <p class="z">常用网站</p>
-                <p class="y">Useful Sites</p>
+                <p onclick="more(6)" class="z">常用网站</p>
+                <p onclick="more(6)" class="y">Useful Sites</p>
             </div>
         </a>
 
         <div class="main1_div">
             <div class="well">
-                <a href="#">
+                <a target="_blank" href="https://www.baidu.com">
                     <div class="well-item well1">
                         <div class="correct"><img class="" src="${APP_PATH}/index/img/baidu.jpg"/></div>
                         <div class="opposite">
@@ -168,8 +175,8 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="well-item well1">
+                <a target="_blank" href="https://www.google.com">
+                    <div class=" well-item well1">
                         <div class="correct"><img class="" src="${APP_PATH}/index/img/guge.jpg"/></div>
                         <div class="opposite">
                             <div class="">
@@ -182,7 +189,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://www.oschina.net/">
                     <div class="well-item well1">
                         <div class="correct"><img class="" src="${APP_PATH}/index/img/kaiyuan.jpg"/></div>
                         <div class="opposite">
@@ -196,7 +203,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://www.csdn.net/">
                     <div class="well-item">
                         <div class="correct"><img class="" src="${APP_PATH}/index/img/csdn.jpg"/></div>
                         <div class="opposite">
@@ -210,7 +217,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://juejin.im/">
                     <div class="well-item well1 well2">
                         <div class="correct"><img class="" src="${APP_PATH}/index/img/juejin.jpg"/></div>
                         <div class="opposite">
@@ -224,7 +231,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://www.jianshu.com/">
                     <div class="well-item well1 well2">
                         <div class="correct"><img class="" src="${APP_PATH}/index/img/jianshu.jpg"/></div>
                         <div class="opposite">
@@ -238,7 +245,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="http://wanandroid.com/">
                     <div class="well-item well1 well2">
                         <div class="correct"><img class="" src="${APP_PATH}/index/img/wan.jpg"/></div>
                         <div class="opposite">
@@ -252,7 +259,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://exmail.qq.com/">
                     <div class="well-item well2">
                         <div class="correct"><img class="" src="${APP_PATH}/index/img/youxiang.jpg"/></div>
                         <div class="opposite">
@@ -269,7 +276,7 @@
 
 
             </div>
-            <a class="more" id="main2" href="#">MORE+</a>
+            <a class="more" onclick="more(6)" id="main2" href="#">MORE+</a>
 
         </div>
     </div>
@@ -310,8 +317,8 @@
     <div class="main2">
         <a href="#">
             <div class="tit">
-                <p class="z">工具大全</p>
-                <p class="y">Tool</p>
+                <p onclick="more(2)" class="z">工具大全</p>
+                <p onclick="more(2)" class="y">Tool</p>
             </div>
         </a>
         <div class="index_hd">
@@ -388,7 +395,7 @@
         <script type="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao.js"></script>
         <script type="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao2.js"></script>
 
-        <a class="more2" id="main3" href="#">MORE+</a>
+        <a class="more" onclick="more(2)" id="main3" href="#">MORE+</a>
 
     </div>
 
@@ -400,8 +407,8 @@
 
         <a href="#">
             <div class="tit">
-                <p class="z">经典博客</p>
-                <p class="y">Blog</p>
+                <p onclick="more(7)" class="z">经典博客</p>
+                <p onclick="more(7)" class="y">Blog</p>
             </div>
         </a>
 
@@ -522,7 +529,7 @@
 
 
             </div>
-            <a class="more" id="main4" href="#">MORE+</a>
+            <a class="more" onclick="more(7)" id="main4" href="#">MORE+</a>
 
         </div>
     </div>
@@ -534,8 +541,8 @@
     <div class="main2 main4">
         <a href="#">
             <div class="tit">
-                <p class="z">进阶之路</p>
-                <p class="y">Advanced</p>
+                <p onclick="more(5)" class="z">进阶之路</p>
+                <p onclick="more(5)" class="y">Advanced</p>
             </div>
         </a>
         <div class="index_hd">
@@ -612,7 +619,7 @@
         <script type="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao.js"></script>
         <script type="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao2.js"></script>
 
-        <a class="more2" id="main5" href="#">MORE+</a>
+        <a class="more" onclick="more(5)" id="main5" href="#">MORE+</a>
 
     </div>
 
@@ -623,8 +630,8 @@
 
         <a href="#">
             <div class="tit">
-                <p class="z">源码下载</p>
-                <p class="y">Source code</p>
+                <p onclick="more(3)" class="z">开放源码</p>
+                <p onclick="more(3)" class="y">Source code</p>
             </div>
         </a>
 
@@ -745,7 +752,7 @@
 
 
             </div>
-            <a class="more" id="main6" href="#">MORE+</a>
+            <a class="more" onclick="more(3)" id="main6" href="#">MORE+</a>
 
         </div>
     </div>
@@ -757,8 +764,8 @@
     <div class="main2 main6">
         <a href="#">
             <div class="tit">
-                <p class="z">开放平台</p>
-                <p class="y">Platform</p>
+                <p onclick="more(4)" class="z">社区论坛</p>
+                <p onclick="more(4)" class="y">Platform</p>
             </div>
         </a>
         <div class="index_hd">
@@ -835,7 +842,7 @@
         <script type="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao.js"></script>
         <script type="text/javascript" src="${APP_PATH}/index/js/yidingzhezhao2.js"></script>
 
-        <a class="more2" id="main7" href="#">MORE+</a>
+        <a class="more" onclick="more(4)" id="main7" href="#">MORE+</a>
 
     </div>
 
@@ -847,8 +854,8 @@
 
         <a href="#">
             <div class="tit">
-                <p class="z">跳槽指南</p>
-                <p class="y">Change work</p>
+                <p onclick="more(1)" class="z">跳槽指南</p>
+                <p onclick="more(1)" class="y">Change work</p>
             </div>
         </a>
 
@@ -969,7 +976,7 @@
 
 
             </div>
-            <a class="more" id="main8" href="#">MORE+</a>
+            <a class="more" onclick="more(1)" id="main8" href="#">MORE+</a>
 
         </div>
     </div>
@@ -981,8 +988,8 @@
     <div class="main2 main8">
         <a href="#">
             <div class="tit">
-                <p class="z">其它</p>
-                <p class="y">Other</p>
+                <p onclick="more(0)" class="z">其它</p>
+                <p onclick="more(0)" class="y">Other</p>
             </div>
         </a>
         <div class="index_hd">
@@ -1059,7 +1066,7 @@
         <script type="text/javascript" src="${APP_PATH}index/js/yidingzhezhao.js"></script>
         <script type="text/javascript" src="${APP_PATH}index/js/yidingzhezhao2.js"></script>
         <script src="${APP_PATH}/layer/layer.js"></script>
-        <a class="more2" href="#">MORE+</a>
+        <a class="more" onclick="more(0)" href="#">MORE+</a>
 
     </div>
 
@@ -1074,7 +1081,7 @@
             <p class="l_tit">友情链接</p>
             <ul>
                 <li>
-                    <a href="#">天津大学</a>
+                    <a target="_blank" href="http://www.tju.edu.cn/">天津大学</a>
                 </li>
                 <li>
                     <a href="www.baidu.com">百度</a>
@@ -1104,6 +1111,11 @@
 
     function userInfo() {
         window.location.href = "${APP_PATH}/user/userInfo";
+    }
+
+    function more(type) {
+        var url = "${APP_PATH}/resource/more/" + type;
+        window.location.href = url;
     }
 </script>
 

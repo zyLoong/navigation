@@ -8,7 +8,7 @@
     </select>
 
     <insert id="saveUser" parameterType="com.tju.navigation.bean.User">
-        INSERT INTO user (username, password, email) VALUES (#{username}, #{password}, #{email})
+        INSERT INTO user (id, username, password, email) VALUES (#{id}, #{username}, #{password}, #{email})
     </insert>
 
 
@@ -87,7 +87,29 @@
     </select>
 
     <select id="getUserIdByResourceId" resultType="java.lang.String">
-        SELECT contributorid FROM resource WHERE id=#{id}
+        SELECT contributorid
+        FROM resource
+        WHERE id = #{id}
     </select>
 
+    <select id="getUserById" resultType="com.tju.navigation.bean.User">
+        SELECT
+            id,
+            username,
+            email,
+            createtime,
+            usertype,
+            points
+        FROM user
+        WHERE id = #{userid}
+    </select>
+
+    <update id="collectionResource">
+        INSERT INTO collection (userid, resourceid) VALUES (#{userid}, #{resourceid});
+    </update>
+
+    <delete id="cancelCollection">
+        DELETE FROM collection
+        WHERE userid = #{userid} AND resourceid = #{resourceid}
+    </delete>
 </mapper>

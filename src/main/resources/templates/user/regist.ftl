@@ -58,7 +58,7 @@
                 }
                 if (password != confirmPassword) {
                     layer.msg("两次输入密码不一致", {time: 2000, icon: 5, shift: 6});
-
+                    return false;
                 }
                 var str = /^[a-z0-9_-]{3,16}$/;
                 if (!str.test(username)) {

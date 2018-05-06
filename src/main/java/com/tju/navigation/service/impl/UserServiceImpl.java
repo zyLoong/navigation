@@ -6,6 +6,7 @@ import com.tju.navigation.dao.UserDao;
 import com.tju.navigation.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import sun.security.util.Resources_it;
 
 import java.util.List;
 
@@ -32,6 +33,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public User getUser(User loginUser) {
         return userDao.getUser(loginUser);
+    }
+
+    @Override
+    public User getUserById(String userid) {
+        return userDao.getUserById(userid);
     }
 
     @Override
@@ -64,6 +70,9 @@ public class UserServiceImpl implements UserService {
         String userId = user.getId();
         //        从收藏表中获取收藏的资源id
         List<Integer> list = userDao.getUserCollectionResourceids(userId);
+        if (list.size() <= 0) {
+            return null;
+        }
 //        根据资源id获取资源列表
         List<Resource> resourceList = userDao.getResourcesByResourceIds(list);
         return resourceList;
@@ -72,5 +81,16 @@ public class UserServiceImpl implements UserService {
     @Override
     public String getUserIdByResourceId(String id) {
         return userDao.getUserIdByResourceId(id);
+    }
+
+    @Override
+    public void collectionResource(String id, Integer resourceid) {
+        userDao.collectionResource(id, resourceid);
+
+    }
+
+    @Override
+    public void cancelCollection(String userid, Integer resourceid) {
+        userDao.cancelCollection(userid, resourceid);
     }
 }

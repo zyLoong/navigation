@@ -19,7 +19,12 @@
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span3" id="sidebar">
-        <#include "${APP_PATH}/user/leftContainer.ftl">
+        <#--<#include "${APP_PATH}/user/leftContainer.ftl">-->
+            <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
+                <li>
+                    <a href="${APP_PATH}/index"><i class="icon-chevron-right"></i> 返回首页</a>
+                </li>
+            </ul>
         </div>
         <div class="span9" id="content">
             <hr>
@@ -48,7 +53,8 @@
                                         <input type="text" id="resourceName" name="resourceName" style="width:200px">
                                     </td>
                                     <td>
-                                        <input type="text" id="resourceUrl" name="resourceUrl" value="https://" style="width:400px">
+                                        <input type="text" id="resourceUrl" name="resourceUrl" value="https://"
+                                               style="width:400px">
                                     </td>
                                     <td>
                                     <#--<select class="span6 m-wrap" name="category" style="width:120px">-->
@@ -107,13 +113,14 @@
             data: {
                 name: name,
                 url: url,
-                resourcetype: resourcetype
+                resourcetype: resourcetype,
+                contributorid: "0"
             },
             success: function (result) {
                 if (result.success) {
                     layer.msg("提交成功，请等待审核", {time: 1000, icon: 6});
-                    setTimeout("window.location.href='${APP_PATH}/user/userInfo'",1000);
-                    <#--window.location.href="${APP_PATH}/user/userInfo"-->
+                    setTimeout("window.location.href='${APP_PATH}/user/userInfo'", 1000);
+                <#--window.location.href="${APP_PATH}/user/userInfo"-->
                 } else {
                     layer.msg("提交失败", {time: 2000, icon: 5, shift: 6});
                 }

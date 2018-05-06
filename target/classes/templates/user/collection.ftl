@@ -13,12 +13,12 @@
 
 <body>
 <div class="navbar navbar-fixed-top">
-<#include "${APP_PATH}/topContainer.ftl">
+<#include "${APP_PATH}/user/topContainer.ftl">
 </div>
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span3" id="sidebar">
-        <#include "${APP_PATH}/leftContainer.ftl">
+        <#include "${APP_PATH}/user/leftContainer.ftl">
         </div>
 
         <!--/span-->
@@ -31,28 +31,30 @@
                     </div>
                     <div class="block-content collapse in">
                         <div class="span12">
-                            <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered"
-                                   id="example2">
+                            <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>名称</th>
                                     <th>类型</th>
+                                    <th>贡献者</th>
                                     <th>提交时间</th>
                                     <th>点击量</th>
+                                    <th>取消收藏</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <#list Request.collectionResources as resource>
                                 <tr class="odd gradeX">
                                     <td>
-                                        <a onclick="clickUrl(${resource.id})" href="${resource.url}">${resource.name}</a>
+                                        <a target="_blank" onclick="clickUrl(${resource.id})" href="${resource.url}">${resource.name}</a>
 
                                     </td>
                                     <td>${resource.resourcetype}</td>
+                                    <td>${resource.contributorname}</td>
                                     <td>${resource.createtime}</td>
                                     <td>${resource.frequency}</td>
                                     <td>
-                                        <button class="btn"><i class="icon-eye-open"></i></button>
+                                        <button onclick="cancelCollection(#{resource.id})" class="btn btn-danger"><i class="icon-remove icon-white"></i> </button>
                                     </td>
                                 </tr>
                                 </#list>
@@ -83,41 +85,28 @@
 
 <script src="${APP_PATH}/assets/scripts.js"></script>
 <script src="${APP_PATH}/assets/DT_bootstrap.js"></script>
+<script src="${APP_PATH}/layer/layer.js"></script>
+
 <script>
     $(function () {
 
     });
-
-    <#--//  页面加载后异步加载用户所提交过的所有资源-->
-    <#--$.ajax({-->
-    <#--type: "post",-->
-    <#--url: '${APP_PATH}/user/getResourcesByUsername',-->
-    <#--data: {-->
-    <#--contributorid: "${Session.loginUser.id}"-->
-    <#--},-->
-    <#--success: function (result) {-->
-    <#--if (result.success) {-->
-    <#--var content = '';-->
-    <#--$.each(result.data, function (i, e) {-->
-
-
-    <#--content = content + '<tr class="odd gradeX">'-->
-    <#--//                            <a onclick="toUrl('www.baidu.com')">baidu</a>-->
-    <#--//                    content = content + '    <td> <a href="#" onclick="toUrl(\''+e.url+'\')">' + e.name + '</a></td>'-->
-    <#--content = content + '    <td> <a  onclick="clickUrl(\'' + e.id + '\')"                 id="' + e.id + '"  class="resourceUrl"  target="_blank"  href="' + e.url + '" >' + e.name + '</a></td>'-->
-    <#--content = content + '    <td>' + e.resourcetype + '</td>'-->
-    <#--content = content + '    <td class="center">' + e.createtime + '</td>'-->
-    <#--content = content + '    <td class="center">' + e.frequency + '</td>'-->
-    <#--content = content + '</tr>'-->
-    <#--});-->
-    <#--$("tbody").html(content);-->
-
-    <#--} else {-->
-    <#--//                alert(result.message)-->
-    <#--}-->
-    <#--}-->
-
-    <#--});-->
+    function cancelCollection(resourceid) {
+        $.ajax({
+            type : "post",
+            url : "${APP_PATH}/user/cacelCollection",
+            data : {
+                resourceid : resourceid
+            },
+            success : function (result) {
+                if(result.success){
+                    layer.msg("取消收藏成功", {time: 1000, icon: 6});
+                }else{
+                    layer.msg("取消收藏失败", {time: 1000, icon: 5, shift: 6});
+                }
+            }
+        })
+    }
 
     function clickUrl(id) {
         $.ajax({

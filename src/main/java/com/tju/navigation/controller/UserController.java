@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 /**
  * 用户控制器，执行注册登录等功能
@@ -25,6 +26,7 @@ import java.util.Map;
 public class UserController extends BaseController {
     @Autowired
     private UserService userService;
+
 
 
     /**
@@ -57,8 +59,23 @@ public class UserController extends BaseController {
      * 转到用户信息页面
      */
     @RequestMapping("user/userInfo")
-    public String userInfo() {
+    public String userInfo(HttpSession session) {
+        User user = (User) session.getAttribute(Const.LOGIN_USER);
+        if (user == null) {
+            return "index";
+        }
         return "user/userinfo";
+    }
+    /**
+     * 转到用户提交过的资源页面
+     */
+    @RequestMapping("user/userResources")
+    public String userResources(HttpSession session) {
+        User user = (User) session.getAttribute(Const.LOGIN_USER);
+        if (user == null) {
+            return "index";
+        }
+        return "user/userResources";
     }
 
 
@@ -68,6 +85,13 @@ public class UserController extends BaseController {
     @RequestMapping("/user/toAddResource")
     public String toAddResource() {
         return "user/addResource";
+    }
+    /**
+     * 跳转到游客添加资源页面
+     */
+    @RequestMapping("/user/toGuestAddResource")
+    public String toGuestAddResource() {
+        return "user/guestAddResource";
     }
 
     /**
@@ -82,9 +106,70 @@ public class UserController extends BaseController {
             return "index";
         }
         List<Resource> collectionResources = userService.getUserCollectionResources(user);
+        if (collectionResources == null) {
+            return "/user/collection";
+        }
         collectionResources = ResourceUtil.resourceTypeNumToStr(collectionResources);
+        collectionResources = ResourceUtil.resourceContributoridToStr(collectionResources, userService);
+
+
         map.put("collectionResources", collectionResources);
         return "/user/collection";
+    }
+
+    /**
+     * 用户收藏资源
+     * @param resourceid
+     * @param session
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping("/user/collection")
+    public Object collection(Integer resourceid, HttpSession session) {
+        start();
+        try {
+            User user = (User) session.getAttribute(Const.LOGIN_USER);
+            if (user == null) {
+                success(false);
+                message("收藏失败，请登录后操作");
+                return end();
+            }
+            userService.collectionResource(user.getId(), resourceid);
+            success(true);
+            message("收藏成功");
+        } catch (Exception e) {
+            success(false);
+            message("收藏失败，可能已经收藏");
+            e.printStackTrace();
+        }
+
+        return end();
+    }
+
+    /**
+     * 取消收藏
+     * @param resourceid
+     * @param session
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping("/user/cacelCollection")
+    public Object cacelCollection(Integer resourceid, HttpSession session) {
+        start();
+        try {
+            User user = (User) session.getAttribute(Const.LOGIN_USER);
+            if (user == null) {
+                success(false);
+                return end();
+            }
+            userService.cancelCollection(user.getId(), resourceid);
+
+            success(true);
+        } catch (Exception e) {
+            success(false);
+            e.printStackTrace();
+        }
+        return end();
     }
 
     /**
@@ -158,7 +243,10 @@ public class UserController extends BaseController {
         start();
         try {
             User user = (User) session.getAttribute(Const.LOGIN_USER);
-            resource.setContributorid(user.getId());
+//            如果用户未登陆，则贡献者id为0（内置用户：游客）
+            if (user == null) {
+                resource.setContributorid("0");
+            }
             userService.addResource(resource);
 
             success(true);
@@ -192,6 +280,13 @@ public class UserController extends BaseController {
 //            2、用户名未被占用，保存用户信息
             String password = MD5Util.digest(user.getPassword());
             user.setPassword(password);
+            StringBuilder str = new StringBuilder();
+            for (int i = 0; i < 11; i++) {
+                int ran = new Random().nextInt(10);
+                str.append(ran);
+            }
+            user.setId(str.toString());
+
             int count = userService.saveUser(user);
             if (count == 1) {
                 success(true);

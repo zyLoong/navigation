@@ -71,10 +71,11 @@ public interface UserDao {
      * @param id 用户id
      * @param i  用户积分增加数值
      */
-    void pointsPlus(@Param("id") String id,@Param("i") int i);
+    void pointsPlus(@Param("id") String id, @Param("i") int i);
 
     /**
      * 根据用户ID从collection表中查询用户收藏资源列表
+     *
      * @param userId
      * @return
      */
@@ -82,6 +83,7 @@ public interface UserDao {
 
     /**
      * 根据资源id列表获取资源列表
+     *
      * @param list
      * @return
      */
@@ -89,8 +91,33 @@ public interface UserDao {
 
     /**
      * 根据资源id获取资源贡献者用户
-     * @return
+     *
      * @param id
+     * @return
      */
     String getUserIdByResourceId(String id);
+
+    /**
+     * 根据用户ID获取用户对象
+     *
+     * @param userid
+     * @return
+     */
+    User getUserById(String userid);
+
+    /**
+     * 用户收藏资源，向收藏表插入记录
+     *
+     * @param id
+     * @param resourceid
+     */
+    void collectionResource(@Param("userid") String id, @Param("resourceid") Integer resourceid);
+
+    /**
+     * 取消收藏
+     *
+     * @param userid
+     * @param resourceid
+     */
+    void cancelCollection(@Param("userid") String userid, @Param("resourceid") Integer resourceid);
 }

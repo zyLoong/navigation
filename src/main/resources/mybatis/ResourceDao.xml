@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tju.navigation.dao.ResourceDao">
+    <select id="getAllResource" resultType="com.tju.navigation.bean.Resource">
+        SELECT
+            id,
+            name,
+            url,
+            resourcetype,
+            frequency,
+            contributorid,
+            createtime,
+            status
+        FROM resource
+        WHERE status = 1;
+    </select>
+
+    <select id="getResourcesByType" resultType="com.tju.navigation.bean.Resource">
+        SELECT
+            id,
+            name,
+            url,
+            resourcetype,
+            frequency,
+            contributorid,
+            createtime,
+            status
+        FROM resource
+        WHERE status = 1 AND resourcetype = #{type}
+    </select>
+</mapper>

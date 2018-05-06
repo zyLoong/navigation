@@ -13,12 +13,12 @@
 
 <body>
 <div class="navbar navbar-fixed-top">
-<#include "${APP_PATH}/topContainer.ftl">
+<#include "${APP_PATH}/manager/topContainer.ftl">
 </div>
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span3" id="sidebar">
-        <#include "${APP_PATH}/leftContainer.ftl">
+        <#include "${APP_PATH}/manager/leftContainer.ftl">
         </div>
 
         <!--/span-->
@@ -27,13 +27,12 @@
                 <!-- block -->
                 <div class="block">
                     <div class="navbar navbar-inner block-header">
-                        <div class="muted pull-left">Bootstrap dataTables</div>
+                        <div class="muted pull-left">用户管理</div>
                     </div>
                     <div class="block-content collapse in">
                         <div class="span12">
 
-                            <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered"
-                                   id="example">
+                            <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>用户id</th>

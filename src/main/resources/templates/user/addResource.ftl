@@ -13,13 +13,13 @@
 
 <body>
 <div class="navbar navbar-fixed-top">
-<#include "${APP_PATH}/topContainer.ftl">
+<#include "${APP_PATH}/user/topContainer.ftl">
 </div>
 
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span3" id="sidebar">
-        <#include "${APP_PATH}/leftContainer.ftl">
+        <#include "${APP_PATH}/user/leftContainer.ftl">
         </div>
         <div class="span9" id="content">
             <hr>

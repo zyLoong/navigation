@@ -25,7 +25,7 @@ public class ManagerServiceImpl implements ManagerService {
 
     @Override
     public void auditedResources(List<Resource> resourceList) {
-        managerDao.auditedResources(resourceList);
+            managerDao.auditedResources(resourceList);
     }
 
 //    @Override

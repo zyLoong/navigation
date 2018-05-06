@@ -2,6 +2,8 @@ package com.tju.navigation.util;
 
 import com.tju.navigation.bean.Resource;
 import com.tju.navigation.bean.User;
+import com.tju.navigation.service.UserService;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -9,25 +11,8 @@ import java.util.List;
  * @author Administrator
  * @date 2018/05/02
  */
+@Component
 public class ResourceUtil {
-    private List<Resource> resourceList;
-    private List<User> userList;
-
-    public List<User> getUserList() {
-        return userList;
-    }
-
-    public void setUserList(List<User> userList) {
-        this.userList = userList;
-    }
-
-    public List<Resource> getResourceList() {
-        return resourceList;
-    }
-
-    public void setResourceList(List<Resource> resourceList) {
-        this.resourceList = resourceList;
-    }
 
     /**
      * 将资源状态代号转为字符串
@@ -78,15 +63,15 @@ public class ResourceUtil {
                     break;
                 }
                 case "3": {
-                    resource.setResourcetype("门户");
+                    resource.setResourcetype("开源");
                     break;
                 }
                 case "4": {
-                    resource.setResourcetype("社区论坛");
+                    resource.setResourcetype("社区");
                     break;
                 }
                 case "5": {
-                    resource.setResourcetype("学习进阶");
+                    resource.setResourcetype("进阶");
                     break;
                 }
                 case "6": {
@@ -102,4 +87,18 @@ public class ResourceUtil {
         }
         return list;
     }
+
+    /**
+     * 根据资源贡献者id为贡献者名赋值
+     * @param resourceList
+     * @return
+     */
+    public static List<Resource> resourceContributoridToStr(List<Resource> resourceList,UserService userService) {
+        for (Resource resource : resourceList) {
+            User user = userService.getUserById(resource.getContributorid());
+            resource.setContributorname(user.getUsername());
+        }
+        return resourceList;
+    }
 }
+

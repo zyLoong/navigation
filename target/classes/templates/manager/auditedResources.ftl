@@ -13,12 +13,12 @@
 
 <body>
 <div class="navbar navbar-fixed-top">
-<#include "${APP_PATH}/topContainer.ftl">
+<#include "${APP_PATH}/manager/topContainer.ftl">
 </div>
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span3" id="sidebar">
-        <#include "${APP_PATH}/leftContainer.ftl">
+        <#include "${APP_PATH}/manager/leftContainer.ftl">
         </div>
 
         <!--/span-->
@@ -27,13 +27,13 @@
                 <!-- block -->
                 <div class="block">
                     <div class="navbar navbar-inner block-header">
-                        <div class="muted pull-left">Bootstrap dataTables</div>
+                        <div class="muted pull-left">资源审核</div>
                     </div>
                     <div class="block-content collapse in">
                         <div class="span12">
 
-                            <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered"
-                                   id="example">
+                            <table cellpadding="0" cellspacing="0" border="0"
+                                   class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>ID</th>
@@ -112,11 +112,11 @@
                                 <#--通过/拒绝单选按钮-->
                                     <td class="resourceRadion" width="90px">
                                         <label>
-                                            <input type="radio" name="${resource.url}" value="1"
+                                            <input type="radio" name="${resource.createtime}" value="1"
                                                    checked>通过
                                         </label>
                                         <label>
-                                            <input type="radio" name="${resource.url}" value="0">拒绝
+                                            <input type="radio" name="${resource.createtime}" value="0">拒绝
                                         </label>
                                     </td>
 
@@ -151,23 +151,24 @@
 
 <script src="${APP_PATH}/assets/scripts.js"></script>
 <script src="${APP_PATH}/assets/DT_bootstrap.js"></script>
+<script src="${APP_PATH}/layer/layer.js"></script>
 <script>
     $(function () {
 
     });
 
     <#--function submit() {-->
-        <#--var jsonObj = {};-->
-        <#--jsonObj["userList[0].id"] = "1";-->
-        <#--jsonObj["userList[0].username"] = "zhangsan";-->
-        <#--$.ajax({-->
-            <#--type: "post",-->
-            <#--url: "${APP_PATH}/manager/auditedResources",-->
-            <#--data: jsonObj,-->
-            <#--success: function () {-->
+    <#--var jsonObj = {};-->
+    <#--jsonObj["userList[0].id"] = "1";-->
+    <#--jsonObj["userList[0].username"] = "zhangsan";-->
+    <#--$.ajax({-->
+    <#--type: "post",-->
+    <#--url: "${APP_PATH}/manager/auditedResources",-->
+    <#--data: jsonObj,-->
+    <#--success: function () {-->
 
-            <#--}-->
-        <#--});-->
+    <#--}-->
+    <#--});-->
     <#--}-->
 
     function submit() {
@@ -206,7 +207,14 @@
         $.ajax({
             type: "post",
             url: "${APP_PATH}/manager/auditedResources",
-            data: jsonObj
+            data: jsonObj,
+            success: function (result) {
+                if (result.success) {
+                    layer.msg("操作成功", {time: 1000, icon: 6});
+                } else {
+                    layer.msg("操作失败", {time: 1000, icon: 5, shift: 6});
+                }
+            }
         });
     }
 </script>

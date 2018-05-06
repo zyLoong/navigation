@@ -5,7 +5,7 @@ import com.tju.navigation.bean.User;
 import com.tju.navigation.service.ManagerService;
 import com.tju.navigation.service.UserService;
 import com.tju.navigation.util.Const;
-import com.tju.navigation.util.ResourceUtil;
+import com.tju.navigation.vo.Datas;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -54,7 +54,13 @@ public class ManagerController extends BaseController {
      * @return
      */
     @RequestMapping("/manager/toResourcesAudited")
-    public String toResources(Map<String, Object> map) {
+    public String toResources(Map<String, Object> map, HttpSession session) {
+        User user = (User) session.getAttribute(Const.LOGIN_USER);
+        if (user == null || "2".equals(user.getUsertype())) {
+            return "index";
+        }
+
+
         List<Resource> resourceList = managerService.getUnauditedResources();
 
 
@@ -72,10 +78,15 @@ public class ManagerController extends BaseController {
      */
     @ResponseBody
     @RequestMapping(value = "/manager/auditedResources")
-    public Object auditedResources(ResourceUtil json) throws IOException {
+    public Object auditedResources(Datas json,HttpSession session) throws IOException {
         start();
-
         try {
+            User user = (User) session.getAttribute(Const.LOGIN_USER);
+            if (user == null || "2".equals(user.getUsertype())) {
+                return "index";
+            }
+
+
             List<Resource> resourceList = json.getResourceList();
             managerService.auditedResources(resourceList);
             success(true);
@@ -83,7 +94,7 @@ public class ManagerController extends BaseController {
             success(false);
             e.printStackTrace();
         }
-        return null;
+        return end();
     }
 //
 //    /**
