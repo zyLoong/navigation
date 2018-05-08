@@ -3,6 +3,7 @@ package com.tju.navigation.controller;
 import com.tju.navigation.bean.Resource;
 import com.tju.navigation.bean.User;
 import com.tju.navigation.service.ManagerService;
+import com.tju.navigation.service.ResourceService;
 import com.tju.navigation.service.UserService;
 import com.tju.navigation.util.Const;
 import com.tju.navigation.vo.Datas;
@@ -27,6 +28,9 @@ public class ManagerController extends BaseController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private ResourceService resourceService;
 
     /**
      * 带着用户列表转到后台管理页面
@@ -78,15 +82,13 @@ public class ManagerController extends BaseController {
      */
     @ResponseBody
     @RequestMapping(value = "/manager/auditedResources")
-    public Object auditedResources(Datas json,HttpSession session) throws IOException {
+    public Object auditedResources(Datas json, HttpSession session) throws IOException {
         start();
         try {
             User user = (User) session.getAttribute(Const.LOGIN_USER);
             if (user == null || "2".equals(user.getUsertype())) {
                 return "index";
             }
-
-
             List<Resource> resourceList = json.getResourceList();
             managerService.auditedResources(resourceList);
             success(true);
@@ -96,6 +98,21 @@ public class ManagerController extends BaseController {
         }
         return end();
     }
+
+    @RequestMapping("/manager/toResources")
+    public String toResources(HttpSession session, Map<String, Object> map) {
+        User user = (User) session.getAttribute(Const.LOGIN_USER);
+        if (user == null || "2".equals(user.getUsertype())) {
+            return "index";
+        }
+        List<Resource> resourceList = resourceService.getAllResource();
+        map.put("resourceList", resourceList);
+
+
+        return "manager/resources";
+    }
+
+
 //
 //    /**
 //     * 用户进入用户信息页面后发出异步请求加载该用户提交过的资源列表

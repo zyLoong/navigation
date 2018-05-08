@@ -55,7 +55,7 @@ public interface UserDao {
      * @param contributorid 贡献者id
      * @return 该用户提交过的所有资源
      */
-    List<Resource> getResourcesByContributorid(Integer contributorid);
+    List<Resource> getResourcesByContributorid(String contributorid);
 
     /**
      * 资源链接被点击时发送一个异步请求，请求携带一个链接ID的参数

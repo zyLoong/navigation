@@ -44,7 +44,8 @@
                                 </div>
                             </div>
 
-                            <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered">
+                            <table cellpadding="0" cellspacing="0" border="0"
+                                   class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>名称</th>
@@ -67,12 +68,12 @@
         </div>
     </div>
     <hr>
-    <#--<footer>-->
-        <#--<p>&copy; Vincent Gabriel 2013 - More Templates <a href="http://www.cssmoban.com/" target="_blank"-->
-                                                           <#--title="cssmoban">cssmoban</a>-->
-            <#--<a onclick="toUrl('a')">aaa</a>-->
+<#--<footer>-->
+<#--<p>&copy; Vincent Gabriel 2013 - More Templates <a href="http://www.cssmoban.com/" target="_blank"-->
+<#--title="cssmoban">cssmoban</a>-->
+<#--<a onclick="toUrl('a')">aaa</a>-->
 
-    <#--</footer>-->
+<#--</footer>-->
 </div>
 
 <!--/.fluid-container-->
@@ -92,7 +93,7 @@
     //  页面加载后异步加载用户所提交过的所有资源
     $.ajax({
         type: "post",
-        url: '${APP_PATH}/user/getResourcesByUsername',
+        url: "${APP_PATH}/user/getResourcesByUsername",
         data: {
             contributorid: "${Session.loginUser.id}"
         },

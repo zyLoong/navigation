@@ -6,6 +6,9 @@
         <a href="${APP_PATH}/manager/index"><i class="icon-chevron-right"></i> 用户管理</a>
     </li>
     <li>
+        <a href="${APP_PATH}/manager/toResources"><i class="icon-chevron-right"></i> 资源列表</a>
+    </li>
+    <li>
         <a href="${APP_PATH}/manager/toResourcesAudited"><i class="icon-chevron-right"></i> 资源审核</a>
     </li>
     <li>

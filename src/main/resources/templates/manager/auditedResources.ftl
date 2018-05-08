@@ -211,6 +211,9 @@
             success: function (result) {
                 if (result.success) {
                     layer.msg("操作成功", {time: 1000, icon: 6});
+                    setTimeout(function () {
+                        window.location.href = "${APP_PATH}/manager/toResourcesAudited";
+                    }, 1000);
                 } else {
                     layer.msg("操作失败", {time: 1000, icon: 5, shift: 6});
                 }

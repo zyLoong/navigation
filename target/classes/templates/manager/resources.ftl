@@ -27,7 +27,7 @@
                 <!-- block -->
                 <div class="block">
                     <div class="navbar navbar-inner block-header">
-                        <div class="muted pull-left">资源审核</div>
+                        <div class="muted pull-left">资源列表</div>
                     </div>
                     <div class="block-content collapse in">
                         <div class="span12">
@@ -41,7 +41,7 @@
                                     <th>链接</th>
                                     <th>类型</th>
                                     <th>贡献者ID</th>
-                                    <th>操作</th>
+                                    <#--<th>操作</th>-->
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -110,15 +110,15 @@
                                     <td class="resourceConId" width="70px" class="center">${resource.contributorid}</td>
 
                                 <#--通过/拒绝单选按钮-->
-                                    <td class="resourceRadion" width="90px">
-                                        <label>
-                                            <input type="radio" name="${resource.createtime}" value="1"
-                                                   checked>通过
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="${resource.createtime}" value="0">拒绝
-                                        </label>
-                                    </td>
+                                    <#--<td class="resourceRadion" width="90px">-->
+                                        <#--<label>-->
+                                            <#--<input type="radio" name="${resource.createtime}" value="1"-->
+                                                   <#--checked>通过-->
+                                        <#--</label>-->
+                                        <#--<label>-->
+                                            <#--<input type="radio" name="${resource.createtime}" value="0">拒绝-->
+                                        <#--</label>-->
+                                    <#--</td>-->
 
                                 </tr>
 
@@ -126,7 +126,7 @@
                                 </tbody>
                             </table>
                             <div class="btn-group pull-right">
-                                <button onclick="submit()" class="btn btn-success btn-large">提交</button>
+                                <#--<button onclick="submit()" class="btn btn-success btn-large">提交</button>-->
                             </div>
                         </div>
                     </div>

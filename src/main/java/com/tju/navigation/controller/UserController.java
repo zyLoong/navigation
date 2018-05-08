@@ -28,7 +28,6 @@ public class UserController extends BaseController {
     private UserService userService;
 
 
-
     /**
      * 转到登录页面
      */
@@ -66,6 +65,7 @@ public class UserController extends BaseController {
         }
         return "user/userinfo";
     }
+
     /**
      * 转到用户提交过的资源页面
      */
@@ -86,6 +86,7 @@ public class UserController extends BaseController {
     public String toAddResource() {
         return "user/addResource";
     }
+
     /**
      * 跳转到游客添加资源页面
      */
@@ -119,6 +120,7 @@ public class UserController extends BaseController {
 
     /**
      * 用户收藏资源
+     *
      * @param resourceid
      * @param session
      * @return
@@ -148,6 +150,7 @@ public class UserController extends BaseController {
 
     /**
      * 取消收藏
+     *
      * @param resourceid
      * @param session
      * @return
@@ -246,6 +249,8 @@ public class UserController extends BaseController {
 //            如果用户未登陆，则贡献者id为0（内置用户：游客）
             if (user == null) {
                 resource.setContributorid("0");
+            } else {
+                resource.setContributorid(user.getId());
             }
             userService.addResource(resource);
 
@@ -255,8 +260,6 @@ public class UserController extends BaseController {
             message(Const.SYSTEM_ERROR);
             e.printStackTrace();
         }
-
-
         return end();
     }
 
@@ -314,7 +317,7 @@ public class UserController extends BaseController {
      */
     @ResponseBody
     @RequestMapping("/user/getResourcesByUsername")
-    public Object getResourcesByUsername(Integer contributorid) {
+    public Object getResourcesByUsername(String  contributorid) {
         start();
         try {
             List<Resource> resourcesList = userService.getResourcesByContributorid(contributorid);
@@ -323,7 +326,6 @@ public class UserController extends BaseController {
                 message("暂未提交任何资源");
                 return end();
             }
-
             resourcesList = ResourceUtil.resourceStatusNumToStr(resourcesList);
             resourcesList = ResourceUtil.resourceTypeNumToStr(resourcesList);
 

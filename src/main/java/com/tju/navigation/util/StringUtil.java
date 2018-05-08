@@ -1,14 +1,16 @@
 package com.tju.navigation.util;
 
 
-//与MD5进行一块运算的工具类 判断字符串是否为空
+/**
+ * 与MD5进行一块运算的工具类 判断字符串是否为空
+ */
 public class StringUtil {
 
-	public static boolean isEmpty(String s) {
-		return s == null || "".equals(s); // s == null | s.equals(""); //位与,逻辑与区别,非空字符串放置在前面,避免空指针
-	}
+    public static boolean isEmpty(String s) {
+        return s == null || "".equals(s); // s == null | s.equals(""); //位与,逻辑与区别,非空字符串放置在前面,避免空指针
+    }
 
-	public static boolean isNotEmpty(String s) {
-		return !isEmpty(s);
-	}
+    public static boolean isNotEmpty(String s) {
+        return !isEmpty(s);
+    }
 }

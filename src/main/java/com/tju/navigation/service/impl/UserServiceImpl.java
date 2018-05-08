@@ -6,7 +6,6 @@ import com.tju.navigation.dao.UserDao;
 import com.tju.navigation.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sun.security.util.Resources_it;
 
 import java.util.List;
 
@@ -51,7 +50,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<Resource> getResourcesByContributorid(Integer contributorid) {
+    public List<Resource> getResourcesByContributorid(String contributorid) {
         return userDao.getResourcesByContributorid(contributorid);
     }
 

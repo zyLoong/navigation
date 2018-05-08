@@ -112,7 +112,7 @@
             success: function (result) {
                 if (result.success) {
                     layer.msg("提交成功，请等待审核", {time: 1000, icon: 6});
-                    setTimeout("window.location.href='${APP_PATH}/user/userInfo'",1000);
+                    setTimeout("window.location.href='${APP_PATH}/user/toAddResource'",1000);
                     <#--window.location.href="${APP_PATH}/user/userInfo"-->
                 } else {
                     layer.msg("提交失败", {time: 2000, icon: 5, shift: 6});

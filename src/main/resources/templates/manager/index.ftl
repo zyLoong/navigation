@@ -32,7 +32,8 @@
                     <div class="block-content collapse in">
                         <div class="span12">
 
-                            <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered">
+                            <table cellpadding="0" cellspacing="0" border="0"
+                                   class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>用户id</th>
@@ -40,7 +41,7 @@
                                     <th>邮箱</th>
                                     <th>注册时间</th>
                                     <th>积分</th>
-                                    <th>操作</th>
+                                    <#--<th>操作</th>-->
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -49,11 +50,11 @@
                                     <td>${user.id}</td>
                                     <td>${user.username}</td>
                                     <td>${user.email}</td>
-                                    <td class="center">${user.createtime}</td>
-                                    <td class="center">${user.points}</td>
-                                    <td>
-                                        <button class="btn"><i class="icon-eye-open"></i></button>
-                                    </td>
+                                    <td>${user.createtime}</td>
+                                    <td>${user.points}</td>
+                                    <#--<td>-->
+                                        <#--<button class="btn"><i class="icon-eye-open"></i></button>-->
+                                    <#--</td>-->
                                 </tr>
                                 </#list>
                                 </tbody>

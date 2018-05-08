@@ -62,7 +62,7 @@ public interface UserService {
      * @param contributorid 贡献者id
      * @return 该用户提交过的所有资源
      */
-    List<Resource> getResourcesByContributorid(Integer contributorid);
+    List<Resource> getResourcesByContributorid(String contributorid);
 
     /**
      * 根据资源ID将资源被点击次数加一

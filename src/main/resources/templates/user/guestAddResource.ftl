@@ -19,12 +19,14 @@
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span3" id="sidebar">
+        <#--左边栏开始-->
         <#--<#include "${APP_PATH}/user/leftContainer.ftl">-->
             <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
                 <li>
                     <a href="${APP_PATH}/index"><i class="icon-chevron-right"></i> 返回首页</a>
                 </li>
             </ul>
+        <#--左边栏结束-->
         </div>
         <div class="span9" id="content">
             <hr>
@@ -119,7 +121,7 @@
             success: function (result) {
                 if (result.success) {
                     layer.msg("提交成功，请等待审核", {time: 1000, icon: 6});
-                    setTimeout("window.location.href='${APP_PATH}/user/userInfo'", 1000);
+                    setTimeout("window.location.href='${APP_PATH}/user/toGuestAddResource'", 1000);
                 <#--window.location.href="${APP_PATH}/user/userInfo"-->
                 } else {
                     layer.msg("提交失败", {time: 2000, icon: 5, shift: 6});
